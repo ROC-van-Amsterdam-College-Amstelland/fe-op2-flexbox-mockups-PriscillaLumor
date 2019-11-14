@@ -1,25 +1,48 @@
 html, body{
-    height: 100%;
+    width: 100%;
+    height: 800px;
 }
 
-.navbar {
+header{
     width: 100%;
-    height: 50px;
-    border: 10px;
-    position: relative;
-    overflow: hidden;
+    height: 100px;
     background-color: green;
 }
-    
-.navbar a {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
+
+.flex-container {
+    display: flex;
 }
-    
-.navbar a.right {
-    float: right;
+
+.menu-button, #logo{
+    width: 100px;
+    height: 50px;
+    background-color: white;
+    margin: 30px;
+    flex: wrap;
+}
+
+#logo{
+    margin-left:900px;
+}
+
+main{
+    width: 100%;
+    height: 600px;
+    background-color: orange;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: blueviolet;
+    text-align: right;
+}
+
+.logo1{
+    width: 200px;
+    height: 300px;
+    flex-direction: column;
 }
